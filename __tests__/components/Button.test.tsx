@@ -1,15 +1,12 @@
-/**
- * @format
- */
-
 import 'react-native';
 import React from 'react';
-import App from '../src/App';
-
-// Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
+import {Button} from '../../src/components';
 
 it('renders correctly', () => {
-  const tree = renderer.create(<App />).toJSON();
+  const tree = renderer
+    .create(<Button text="teste" onPress={() => console.log('teste')} />)
+    .toJSON();
+
   expect(tree).toMatchSnapshot();
 });

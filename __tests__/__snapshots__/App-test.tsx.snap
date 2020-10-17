@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+    ]
+  }
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "blueviolet",
+        "borderRadius": 4,
+        "elevation": 2,
+        "opacity": 1,
+        "paddingBottom": 8,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 8,
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "white",
+            "fontSize": 20,
+            "fontWeight": "bold",
+          },
+        ]
+      }
+    >
+      Generate random meal
+    </Text>
+  </View>
+  <RCTScrollView
+    contentContainerStyle={
+      Object {
+        "alignItems": "center",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "marginTop": 32,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View>
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 24,
+              "fontWeight": "bold",
+            },
+          ]
+        }
+      />
+      <Image
+        height={375}
+        source={
+          Object {
+            "uri": undefined,
+          }
+        }
+        style={
+          Array [
+            Object {
+              "borderRadius": 4,
+              "height": 375,
+              "marginTop": 16,
+              "width": 600,
+            },
+          ]
+        }
+        width={600}
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 24,
+              "fontWeight": "bold",
+              "marginTop": 24,
+            },
+          ]
+        }
+      >
+        Instructions
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 16,
+              "marginTop": 8,
+              "textAlign": "center",
+            },
+          ]
+        }
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;
