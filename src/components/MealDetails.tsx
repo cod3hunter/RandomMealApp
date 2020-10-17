@@ -43,11 +43,11 @@ const InstructionsText = styled(Text)`
 `;
 
 type Props = {
-  data: Meal;
+  data: Meal | Partial<Meal>;
   isLoading?: boolean;
 };
 
-const MealDetails: React.FC<Props> = ({data}) => {
+const MealDetails: React.FC<Props> = ({data, isLoading}) => {
   const [ingredients, setIngredients] = useState<string[]>([]);
 
   useEffect(() => {
@@ -56,12 +56,16 @@ const MealDetails: React.FC<Props> = ({data}) => {
     }
   }, [data]);
 
-  if (ingredients.length < 1) {
+  if (isLoading) {
     return (
       <LoadingContainer>
         <ActivityIndicator size={30} color="blueviolet" />
       </LoadingContainer>
     );
+  }
+
+  if (ingredients.length < 1) {
+    <></>;
   }
 
   return (
